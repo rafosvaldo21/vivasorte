@@ -1,377 +1,512 @@
-<html lang="pt-BR"><head>
-    <script>
-      window.pixelId = "67e978ab4c1edd3fcaf907e2";
-      var a = document.createElement("script");
-      a.setAttribute("async", "");
-      a.setAttribute("defer", "");
-      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-      document.head.appendChild(a);
-    </script>
-    <script src="https://cdn-mars.vendd.com.br/p/QrLeHleKux1eJ3uy4bB6EG2LC3ne6Bg6xK1ir5MbvziqERhs/v-files/js/latest_1.js" data-utmify-prevent-subids async defer></script>
-    </head><body>﻿
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Viva Sorte</title>
-        <link href="https://cdn-mars.vendd.com.br/p/QrLeHleKux1eJ3uy4bB6EG2LC3ne6Bg6xK1ir5MbvziqERhs/v-files/css/style.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="css2" rel="stylesheet">
-        <link href="https://cdn-mars.vendd.com.br/p/QrLeHleKux1eJ3uy4bB6EG2LC3ne6Bg6xK1ir5MbvziqERhs/v-files/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn-mars.vendd.com.br/p/QrLeHleKux1eJ3uy4bB6EG2LC3ne6Bg6xK1ir5MbvziqERhs/v-files/css/bootstrap-icons.min.css">
-         
-          <header class="white-header">
-              <div class="logo">
-                  <img src="https://cdn-mars.vendd.com.br/p/QrLeHleKux1eJ3uy4bB6EG2LC3ne6Bg6xK1ir5MbvziqERhs/v-files/assets/logoviva.png" alt="Logomarca" class="logoviva">
-              </div>
-              <button class="menu-button" id="menuButton">
-                  ☰  <!-- Ícone de três linhas -->
-              </button>
-          </header>
-        
-          <meta charset="utf-8">
-      <div class="banner">
-      <div class="container-banner">
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-      
-              <div class="carousel-item active">
-                <div class="tag-compre-agora">
-                  <span>Site Oficial</span>
-                </div>
-      
-                <img src="https://cdn-mars.vendd.com.br/p/QrLeHleKux1eJ3uy4bB6EG2LC3ne6Bg6xK1ir5MbvziqERhs/v-files/assets/32313132323637323334.webp" class="d-block w-100" alt="...">
-              </div>
-      
-            </div>
-          </div>
-          </div>
-          </div>
-          <div class="sorteio-date w-100 text-center">
-            <h1>Sorteio em <span style="background-color: #f0ad4e;" id="contador">7 dias</span> por apenas <span style="background-color: #2f4eb5;">R$0,99</span> </h1>
-          </div>
-      
-      
-          <script>
-      function atualizarContador() {
-          // Obter o elemento span pelo ID
-          var span = document.getElementById('contador');
-      
-          // Obter a data atual
-          var hoje = new Date();
-      
-          // Calcular o número de dias restantes até o próximo domingo (0 para domingo, 1 para segunda-feira, ..., 6 para sábado)
-          var diasRestantes = 7 - hoje.getDay();
-      
-          // Se for domingo, reinicie o contador para 7 dias
-          if (diasRestantes === 0) {
-              diasRestantes = 7;
-          }
-      
-          // Atualizar o conteúdo do span
-          span.textContent = diasRestantes === 1 ? '1 dia' : diasRestantes + ' dias';
-      }
-      
-      // Chamar a função para atualizar o contador quando a página carregar
-      atualizarContador();
-      
-      // Chamar a função para atualizar o contador a cada 24 horas
-      setInterval(atualizarContador, 24 * 60 * 60 * 1000);
-      </script>
-      
-        <div class="container-principal">
-      
-          <!-- BANNER -->
-      
-          <!-- COTAS -->
-      
-          <div class="cotas">
-      
-            <div class="cotas-one">
-                        <button type="button" class="cota" onclick="selecionarValor(15)">
-                  <div class="cota-qtd">                    
-                      +15
-                  </div>
-                  <h1>R$14,85</h1>
-                  <h2>SELECIONAR</h2>
-              </button>
-      
-              <button type="button" class="cota" onclick="selecionarValor(30)">
-                  <div class="cota-qtd">
-                      +30
-                  </div>
-                  <h1>R$29,70</h1>
-                  <h2>SELECIONAR</h2>
-              </button>
-      
-              <button type="button" class="cota" onclick="selecionarValor(40)">
-                  <div class="cota-qtd">
-                  +40
-                  </div>
-                  <h1>R$39,60</h1>
-                  <h2>SELECIONAR</h2>
-              </button>
-      
-              
-      
-            </div>
-      
-            <div class="cotas-one">
-                
-                <button type="button" class="cota" onclick="selecionarValor(70)">
-                  <i class="bi bi-star-fill destaque"></i>
-                  <div class="cota-qtd">
-                  +70
-                  </div>
-                  <h1>R$69,30</h1>
-                  <h2>SELECIONAR</h2>
-              </button>
-      
-              
-      
-              <button type="button" class="cota" onclick="selecionarValor(100)">
-                  <div class="cota-qtd">
-                  +100
-                  </div>
-                  <h1>R$99,00</h1>
-                  <h2>SELECIONAR</h2>
-              </button>
-              
-              <button type="button" class="cota" onclick="selecionarValor(200)">
-                  <div class="cota-qtd">
-                  +200
-                  </div>
-                  <h1>R$199,00</h1>
-                  <h2>SELECIONAR</h2>
-              </button>
-      
-      
-      
-            </div>
-      
-          </div>
-      
-        </div>
-      
-        <div class="container-principal">
-      
-      
-        <div class="contador-cotas">
-              <span>
-                  <button type="button" class="btn-contador-cotas" onclick="decrementar()">-</button>
-              </span>
-              <input type="number" id="numero" class="input-contador-cotas" value="0" min="0" oninput="highlightButton()">
-              <span>
-                  <button type="button" class="btn-contador-cotas" onclick="incrementar()">+</button>
-              </span>
-          </div>
-      
-          <button type="button" id="btn-adicionar-carrinho" class="adc-carrinho" onclick="adicionarAoCarrinho()" disabled>
-              <i class="bi bi-cart-fill"></i> COMPRAR TÍTULOS
-          </button>
-      
-      
-      
-        <div class="sorteio-date w-100 text-center" style="margin-top: 5px;">
-          <br>
-          <h1 style="font-size: 0.72rem;">Comprar mais títulos aumenta suas chances de ganhar!</h1>
-      
-          <div class="container-principal">
-            <div class="hospital">
-      
-              <div class="card-hospital">
-                  <div class="card-hospital-image">
-                      <img src="https://cdn-mars.vendd.com.br/p/QrLeHleKux1eJ3uy4bB6EG2LC3ne6Bg6xK1ir5MbvziqERhs/v-files/assets/logo-hospital.svg">
-                      <h2>Instituição beneficiada</h2>
-                  </div>
-                  <div class="card-hospital-text">
-                      <p>O Hospital do Câncer de Londrina, fundado em 08 de novembro de 1965 por Lucilla Pinto Ballalai, foi originalmente chamado Centro Norte Paranaense de Pesquisas Médicas. Criado com o objetivo de melhorar o tratamento do câncer e a qualidade de vida, o hospital focava inicialmente na prevenção do câncer de colo de útero entre as mulheres de Londrina e região. A instituição sempre buscou aprimorar seus recursos humanos, científicos e tecnológicos.</p>
-                  </div>
-              </div>
-              
-              <div class="card-hospital card-hospital-bg-azul">
-                  <div class="card-hospital-image">
-                      <img src="https://cdn-mars.vendd.com.br/p/QrLeHleKux1eJ3uy4bB6EG2LC3ne6Bg6xK1ir5MbvziqERhs/v-files/assets/viva-hosp.svg">
-                      <h2>Viva Privilégios</h2>
-                  </div>
-                  <div class="card-hospital-text">
-                      <p>Viva Privilégios, um programa que enriquece sua vida com acesso saúde, alimentação, transporte e mais. Com cada compra, acumule pontos para trocar por consultas médicas, receber cashback, e utilizar serviços de telefonia e apps de transporte e alimentação. Eleve sua qualidade de vida e desfrute de mais conveniência e economia!</p>
-                  </div>
-              </div>
-      
-            </div>
-          </div>
-      
-        </div>
-      </div>
-      
-        
-        <link href="https://cdn-mars.vendd.com.br/p/QrLeHleKux1eJ3uy4bB6EG2LC3ne6Bg6xK1ir5MbvziqERhs/v-files/css/rodape.css" rel="stylesheet">
-      
-      
-      <div class="rodape">
-          <div class="container-principal">
-              <img class="logo-rodape" src="https://cdn-mars.vendd.com.br/p/QrLeHleKux1eJ3uy4bB6EG2LC3ne6Bg6xK1ir5MbvziqERhs/v-files/assets/logoviva.png">
-      
-              <div class="redes">
-                  <i class="bi bi-instagram"></i>
-                  <i class="bi bi-facebook"></i>
-                  <i class="bi bi-twitter"></i>
-                  <i class="bi bi-youtube"></i>
-              </div>
-      
-              <h1>Sorteios lastreados por Títulos de Capitalização, da Modalidade Incentivo, emitidos pela VIA Capitalização S.A, inscrita no CNPJ sob nº 88.076.302/0001-94, e aprovados pela SUSEP através do registro na SUSEP Sorteio n° 15414.652257/2023-51. O valor das premiações aqui indicados são líquidos, já descontado o devido imposto de renda de 25%. O registro deste plano na SUSEP não implica, por parte da Autarquia, incentivo ou recomendação a sua comercialização.</h1>
-              
-              <div class="linha-rodape"></div>
-      
-              <div class="patterns-rodape">
-                  <div class="pattern-rodape">
-                      Títulos emitidos por:
-                      <img src="https://cdn-mars.vendd.com.br/p/QrLeHleKux1eJ3uy4bB6EG2LC3ne6Bg6xK1ir5MbvziqERhs/v-files/assets/viacap.png">
-                  </div>
-      
-                  <div class="pattern-rodape">
-                      Promoção realizada por:
-                      <img src="https://cdn-mars.vendd.com.br/p/QrLeHleKux1eJ3uy4bB6EG2LC3ne6Bg6xK1ir5MbvziqERhs/v-files/assets/viva.png">
-                  </div>
-      
-                  <div class="pattern-rodape">
-                      Desenvolvimento:
-                      <img src="https://cdn-mars.vendd.com.br/p/QrLeHleKux1eJ3uy4bB6EG2LC3ne6Bg6xK1ir5MbvziqERhs/v-files/assets/edjdigital.png">
-                  </div>
-              </div>
-          </div>
-      </div>
-      
-        <!-- BOTÃO + E - -->
-        <script>
-          const precoPorUnidade = 0.99;
-      
-          function incrementar() {
-              var input = document.getElementById('numero');
-              var valorAtual = parseInt(input.value);
-              if (valorAtual < 200) {
-                  if (valorAtual === 0) {
-                      input.value = 15;
-                  } else if (valorAtual === 15) {
-                      input.value = 30;
-                  } else if (valorAtual === 30) {
-                      input.value = 40;
-                  } else if (valorAtual === 40) {
-                      input.value = 70;
-                  } else if (valorAtual === 70) {
-                      input.value = 100;
-                  } else if (valorAtual === 100) {
-                      input.value = 200;
-                  }
-              }
-              highlightButton();
-          }
-      
-          function decrementar() {
-              var input = document.getElementById('numero');
-              var valorAtual = parseInt(input.value);
-              if (valorAtual > 15) {
-                  if (valorAtual === 200) {
-                      input.value = 100;
-                  } else if (valorAtual === 100) {
-                      input.value = 70;
-                  } else if (valorAtual === 70) {
-                      input.value = 40;
-                  } else if (valorAtual === 40) {
-                      input.value = 30;
-                  } else if (valorAtual === 30) {
-                      input.value = 15;
-                  }
-              }
-              highlightButton();
-          }
-      
-          function highlightButton() {
-              var input = document.getElementById('numero');
-              var valorAtual = parseInt(input.value);
-              var botoesCotas = document.querySelectorAll('.cota');
-              var botaoAdicionarCarrinho = document.getElementById('btn-adicionar-carrinho');
-              var valorTotal = document.getElementById('valor-total');
-              var link;
-      
-              botoesCotas.forEach(function (botao) {
-                  botao.classList.remove('cota-selected');
-                  var valorBotao = parseInt(botao.querySelector('.cota-qtd').innerText.trim());
-                  if (valorBotao === valorAtual) {
-                      botao.classList.add('cota-selected');
-                      switch (valorBotao) {
-                          case 15:
-                              link = "https://pay.iexperience-app.com/63a40ab9";
-                              break;
-                          case 30:
-                              link = "https://pay.iexperience-app.com/bb1845da";
-                              break;
-                          case 40:
-                              link = "https://pay.iexperience-app.com/d4034a3f";
-                              break;
-                          case 70:
-                              link = "https://pay.iexperience-app.com/ea2bd4fc";
-                              break;
-                          case 100:
-                              link = "https://pay.iexperience-app.com/53d74f7b";
-                              break;
-                                  case 200:
-                              link = "https://pay.iexperience-app.com/bf60e547";
-                              break;
-                      
-                          default:
-                              break;
-                      }
-                      botaoAdicionarCarrinho.setAttribute('onclick', 'adicionarAoCarrinho("' + link + '")');
-                  }
-              });
-      
-              if (valorAtual === 0) {
-                  botaoAdicionarCarrinho.disabled = true;
-                  valorTotal.innerText = "R$ 0,00";
-              } else {
-                  botaoAdicionarCarrinho.disabled = false;
-                  valorTotal.innerText = "R$ " + (valorAtual * precoPorUnidade).toFixed(2).replace('.', ',');
-              }
-          }
-      
-          function selecionarValor(valor) {
-              var input = document.getElementById('numero');
-              input.value = valor;
-              highlightButton();
-          }
-      
-          function adicionarAoCarrinho(link) {
-            window.location.href = link + window.location.search;
-          }
-      
-          document.getElementById('numero').addEventListener('input', function () {
-              this.value = this.value.replace(/[^0-9]/g, ''); // Apenas números permitidos
-              var valor = parseInt(this.value);
-              if (valor > 500) {
-                  this.value = 500;
-              } else if (valor < 10) {
-                  this.value = 0;
-              } else if (valor % 10 !== 0) {
-                  this.value = Math.floor(valor / 10) * 10;
-              }
-              highlightButton();
-          });
-      
-    </script>
-      <script>
-        window.pixelId = "67b97607e690b02ba5a399e4";
-        var a = document.createElement("script");
-        a.setAttribute("async", "");
-        a.setAttribute("defer", "");
-        a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-        document.head.appendChild(a);
-      </script>
-    
-      <script src="https://cdn-mars.vendd.com.br/p/QrLeHleKux1eJ3uy4bB6EG2LC3ne6Bg6xK1ir5MbvziqERhs/v-files/js/latest.js" data-utmify-prevent-subids async defer></script>
-    
-    
-    
-    
-    </body></html>
+<!DOCTYPE html><html><head>
 
+ <script src="js/latest_1.js" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" async="" defer=""></script>
+
+    	<meta charset="UTF-8" "="">
+    <script>
+  window.pixelId = "67ea922e65599c31203566aa";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+ <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '3767377725476181'); // Seu ID do Pixel
+    fbq('track', 'PageView'); // Dispara evento de Page View automaticamente
+    </script>
+    <noscript>
+    <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1327278898286135&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    
+    <script src="js/latest.js" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" async="" defer=""></script> 
+	
+	<style>
+	.pulsante {
+		display: inline-block;
+		padding: 10px 20px;
+		font-size: 16px;
+		color: #fff;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		animation: pulse 1.5s infinite;
+	}
+
+	@keyframes pulse {
+		0% {
+			transform: scale(1);
+		}
+
+		50% {
+			transform: scale(1.1);
+		}
+
+		100% {
+			transform: scale(1);
+		}
+	}
+
+	/* Impede que o conteÃºdo vÃ¡ para os lados */
+	html,
+	body {
+		overflow-x: hidden;
+		/* Impede scroll horizontal */
+		overflow-y: auto;
+		/* Garante que o scroll vertical funcione */
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		box-sizing: border-box;
+		height: 100%;
+	}
+
+	.live-indicator {
+		position: relative;
+		display: inline-block;
+		padding: 5px;
+		/* Space for border effect */
+		border-radius: 50%;
+		border: 4px solid red;
+		/* Borda vermelha */
+		box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+		/* Efeito de brilho */
+	}
+
+	.live-indicator .avatar {
+		display: block;
+	}
+
+	.live-badge {
+		position: absolute;
+		bottom: -10px;
+		/* Posiciona abaixo da imagem */
+		right: 0;
+		background-color: red;
+		color: white;
+		font-size: 10px;
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 4px 8px;
+		border-radius: 20px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+		/*Sombra para destaque */
+	}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="robots" content="index, follow">
+	<meta property="og:title" content="Privacy">
+	<meta property="og:locale" content="pt_BR">
+	<meta property="og:description" content="Privacidade & Liberdade.">
+	<meta property="og:image" content="https://privacy.com.br/assets/img/logo/logo_colorido.jpg">
+	<meta name="kdt:page" content="profile">
+	<title> Privacy | Ruivinha</title>
+	<link rel="icon" type="image/png" href="https://privacy.com.br/assets/img/logo/logo.png">
+	<link rel="apple-touch-icon" sizes="128x128" href="https://privacy.com.br/assets/img/logo/logo.png">
+	<link rel="icon" sizes="192x192" href="https://privacy.com.br/assets/img/logo/logo.png">
+	<link rel="stylesheet" href="css/fontisto-brands.min.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/bulma.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/core.css">
+	<link rel="stylesheet" href="css/bootstrap.min2.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="stylesheet" href="css/privacy3.css">
+	<link rel="stylesheet" href="css/index.min.css">
+	<link rel="stylesheet" href="css/privacy.components.css">
+	<link rel="stylesheet" href="css/balloon.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/blueimp-gallery.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/slick.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/slick-theme.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/video-js.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/photoswipe.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/privacy.components.skeleton.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/perfil.css">
+	<link rel="stylesheet" href="css/pagamento.css">
+	<link rel="stylesheet" href="css/profile.css">
+ 
+	<script>
+	function redirecionar1() {
+		window.location.href = 'https://pay.pagueseguroaqui.com/checkout/50185b75-dec2-4dde-8340-ff45dff2c1a3' + window.location.search;
+	}
+
+	function redirecionar2() {
+		window.location.href = 'https://pay.pagueseguroaqui.com/checkout/50185b75-dec2-4dde-8340-ff45dff2c1a3' + window.location.search;
+	}
+
+	function redirecionar3() {
+		window.location.href = 'https://pay.pagueseguroaqui.com/checkout/801fbb3a-e4cb-4003-b09e-1e27b594d906' + window.location.search;
+	}
+	</script>
+</head>
+
+<body>
+	<div id="loadProgress" style="position: fixed; background-color: white; top: 0; right: 0; bottom: 0; left: 0; z-index: 999999999999; display: none;">
+		<p id="progressBar" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+			<progress style="width: 300px; height: 100px; vertical-align: middle;" value="0" max="100"></progress> <span style="font-size: 30px; font-weight: bold;">0%</span>
+		</p>
+	</div>
+	<div class="pageloader"><img src="images/logo.svg" alt=""></div>
+	<div class="infraloader"></div>
+	<div class="app-overlay"></div>
+	<div id="app-teleport"></div>
+	<!-- Desktop Navbar -->
+	<div id="main-navbar" class="navbar isl-inline-flex is-transparent is-hidden-mobile no-shadow" style="z-index:1000">
+		<div class="container is-fluid">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="https://acaiipremiumbr.shop/hot/?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&xcod=&sck=">
+					<img src="images/logo.svg" width="112" height="28" style="margin-top: 20px; margin-left:19px" alt="">
+				</a>
+			</div>
+			<div class="navbar-menu">
+				<div class="navbar-start">
+				</div>
+				<div class="navbar-end">
+					<!-- MENSAGENS -->
+					<div class="navbar-item is-icon">
+						<a class="icon-link" href="https://acaiipremiumbr.shop/hot/?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&xcod=&sck=">
+							<div>
+								<privacy-web-chatnotifier app-settings="eyJFTkRQT0lOVF9BUElfQ0hBVCI6Imh0dHBzOi8vc2VydmljZS5wcml2YWN5LmNvbS5ici9jaGF0IiwiRU5EUE9JTlRfQVBJX0NIQVRfV1MiOiJ3c3M6Ly9zZXJ2aWNlLXdlYnNvY2tldC5wcml2YWN5LmNvbS5ici9jaGF0IiwiUFJJVkFDWV9VUkwiOiJodHRwczovL3ByaXZhY3kuY29tLmJyIiwiUFJJVkFDWV9NT0RVTEVTIjoiaHR0cHM6Ly9tb2R1bGVzLnByaXZhY3kuY29tLmJyIn0=" token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4NmFhMjYyYy0wZmY0LTQwYzYtYjFiOS0xMGY4ODBiZmE1YjUiLCJlbWFpbCI6ImNvbnRhdG8ucmhkQGdtYWlsLmNvbSIsInVpZCI6IjQyNzMyOTYiLCJhaWQiOiI3ODFhNmM2MC01YTZmLTRjZDUtOWM4My1iZDFhZTgwOGFjZmUiLCJjb3VudHJ5IjoiQlIiLCJpYXQiOjE3MzA5ODM4NzMsInByb2ZpbGVfbmFtZSI6Ijc4MUE2QzYwLTVBNkYtNENENS05QzgzLUJEMUFFODA4QUNGRSIsInJvbGUiOiJDbGllbnQiLCJleHAiOjE3MzEwMDU1MzIsImlzcyI6IlByaXZhY3kifQ.2GxtiHVdRC5nrOaZMiU8HdEvqS3wpm87e6p9b-g3ouI" enabled-push-notification="enabled-push-notification" alert-width="16" alert-height="15" top="14" right="4" stop-connection-if-hidden="true">
+									<div style="display: flex; align-items: center; justify-content: center;" slot="icon-content">
+										<img src="images/Chat.svg">
+									</div>
+								</privacy-web-chatnotifier>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Tablet Navbar -->
+	<nav class="d-block navbar mobile-navbar is-hidden-desktop is-hidden-mobile no-shadow" aria-label="main navigation" style="z-index:1000">
+		<div class="d-block navbar-brand" style="padding-bottom: 0.6rem">
+			<a class="d-inline-flex navbar-item-logo" href="https://acaiipremiumbr.shop/hot/?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&xcod=&sck=">
+				<img src="images/logo_mobile.svg" style="max-height: 50px; max-width: 50px; height: 37px; animation: none;" alt="">
+			</a>
+			<div class="align-self-end d-inline-flex float-right">
+				<div class="navbar-item is-icon">
+					<a class="icon-link" href="https://acaiipremiumbr.shop/hot/?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&xcod=&sck=">
+						<div>
+							<privacy-web-chatnotifier app-settings="eyJFTkRQT0lOVF9BUElfQ0hBVCI6Imh0dHBzOi8vc2VydmljZS5wcml2YWN5LmNvbS5ici9jaGF0IiwiRU5EUE9JTlRfQVBJX0NIQVRfV1MiOiJ3c3M6Ly9zZXJ2aWNlLXdlYnNvY2tldC5wcml2YWN5LmNvbS5ici9jaGF0IiwiUFJJVkFDWV9VUkwiOiJodHRwczovL3ByaXZhY3kuY29tLmJyIiwiUFJJVkFDWV9NT0RVTEVTIjoiaHR0cHM6Ly9tb2R1bGVzLnByaXZhY3kuY29tLmJyIn0=" token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4NmFhMjYyYy0wZmY0LTQwYzYtYjFiOS0xMGY4ODBiZmE1YjUiLCJlbWFpbCI6ImNvbnRhdG8ucmhkQGdtYWlsLmNvbSIsInVpZCI6IjQyNzMyOTYiLCJhaWQiOiI3ODFhNmM2MC01YTZmLTRjZDUtOWM4My1iZDFhZTgwOGFjZmUiLCJjb3VudHJ5IjoiQlIiLCJpYXQiOjE3MzA5ODM4NzMsInByb2ZpbGVfbmFtZSI6Ijc4MUE2QzYwLTVBNkYtNENENS05QzgzLUJEMUFFODA4QUNGRSIsInJvbGUiOiJDbGllbnQiLCJleHAiOjE3MzEwMDU1MzIsImlzcyI6IlByaXZhY3kifQ.2GxtiHVdRC5nrOaZMiU8HdEvqS3wpm87e6p9b-g3ouI" enabled-push-notification="enabled-push-notification" alert-width="16" alert-height="15" top="14" right="4" stop-connection-if-hidden="true">
+								<div style="display: flex; align-items: center; justify-content: center;" slot="icon-content">
+									<img src="images/Chat.svg">
+								</div>
+							</privacy-web-chatnotifier>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- Phone Navbar -->
+	<nav id="mobile-navbar" class="d-block navbar mobile-navbar is-hidden-desktop is-hidden-tablet animate no-shadow" aria-label="main navigation" style="z-index:1000">
+		<div class="d-block navbar-brand" style="padding-bottom: 0.6rem">
+			<a class="d-inline-flex navbar-item-logo" href="https://acaiipremiumbr.shop/hot/?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&xcod=&sck=">
+				<img src="images/logo_mobile.svg" style="max-height: 50px; max-width: 50px; height: 37px; animation: none;" alt="">
+			</a>
+			<div class="align-self-end d-inline-flex float-right">
+			</div>
+		</div>
+	</nav>
+	<div class="nav-drop-overlay" id="nav-drop-overlay"></div>
+	<div class="container-inner view-wrapper">
+		<!-- Container -->
+		<input type="hidden" id="ClienteId" value="d7391a4c-2ef8-4df3-b156-6b834aca71f3">
+		<input type="hidden" id="nomePerfil" name="nomePerfil" value="kerolaychaves">
+		<input type="hidden" id="filterMosaico" name="filterMosaico" value="">
+		<input type="hidden" id="MensagemBume">
+		<input type="hidden" id="Mensagem">
+		<input type="hidden" id="SilenciarPerfilId" name="SilenciarPerfilId" value="">
+		<div class="scroll-x-hidden-mobile-mosaic">
+			<div class="container">
+				<div class="background-custom-size bg-img-styles justify-content-end media overflow-hidden row" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9), transparent), url(images/banner2.jpg);">
+					<div class="align-self-end mb-n3 pb-1 order-last">
+						<ul class="mr-4 row">
+							<li>
+								<strong class="profile-numbers ml-2">
+									<span class="text-light text-counts-profile"> 744 posts </span>
+								</strong>
+							</li>
+							<li><strong class="profile-numbers ml-2"><span class="text-light text-counts-profile"></span></strong></li>
+							<li>
+								<strong class="profile-numbers ml-2">
+									<span class="text-light text-counts-profile"> 370k likes </span>
+								</strong>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="pl-3 pr-4 row">
+					<div class="user-img mt-n5 mr-1">
+						<div style="left:-4px;top:-4px;">
+							<div>
+								<figure class="d-inline-block bg-img-profile live-indicator">
+									<img class="avatar rounded-circle" src="foto-perfil.jfif" id="FotoPerfil" style="max-width:96px;min-height:96px;min-width:96px;">
+									<div class="border-profile"></div>
+									<span class="live-badge">AO VIVO</span>
+								</figure>
+							</div>
+						</div>
+					</div>
+					<div class="px-1 flex-column align-items-start d-flex justify-content-center">
+						<div class="align-items-center d-flex mb-n2  user-title">
+							<div class="d-inline-block word-clamp-40 mb-0 mr-1">
+								<div class="d-inline-block word-clamp-40">
+									<h5 class="d-inline-block item-title mb-0 mr-1 word-clamp-40 text-profile-one">Ruivinha de Marte</h5>
+								</div>
+							</div>
+							<div>
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-check-all" viewBox="0 0 16 16">
+									<path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486z"></path>
+								</svg> </div>
+						</div>
+						<ul class="entry-meta menu-z-index">
+							<li class="meta-privacy text-muted d-inline-block position-relative">
+								<div class="mt-1  mb-2 word-clamp-40">
+									<h6 class="text-nprofile text-ellipsis item-title mb-2 mt-0 word-clamp-40 text-profile-two "> @RuivinhaDeMarte </h6>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 mb-n2 profile-description">
+						<input type="checkbox" class="read-more-checker" id="read-more-checker">
+						<div class="limited l-200">
+							<p class="margin-left-14">Oi meu bem! Sou a Ruivinha de Marte, você já deve me conhecer das redes sociais, agora é a hora de conhecer o meu lado mais safadinha rsrs! Aqui no meu perfil você vai ter cenas picantes feitas por mim sozinha e acompanhada com homens e mulheres, espero que se diversão!</p>
+							<div class="bottom"></div>
+						</div>
+						<label for="read-more-checker" class="view-more-button text-muted pl-3"></label>
+						<div class="pl-3 pr-2 row">
+							<div class="col-12">
+							</div>
+							<div class="row">
+								<div class="col-12 is-multiline">
+									<div class="settings-panel">
+										<h6 class="text-center font-weight-bold mb-4"> VEJA MEUS CONTEÚDOS EXCLUSIVOS</h6>
+									</div>
+									 
+									<!-- Plano 1 mÃªs -->
+									<div class="col-12 mb-3">
+										<button onclick="redirecionar2()" class="pulsante btn btn-primary btn-lg btn-block modal-trigger btnPagamento" style="border-width: 2px; background-color: #ffa500; color: #fff;">
+											<span class="float-left ml-2"> Assinar (14 dias) </span>
+											<span class="float-right mr-2"> R$ 19,90 </span>
+									
+								</button>
+
+							
+									</div>
+									<!-- Plano 3 meses -->
+									<div class="col-12">
+										<button onclick="redirecionar3()" class="pulsante btn btn-primary btn-lg btn-block modal-trigger btnPagamento" style="border-width: 2px; background-color: #ffa500; color: #fff;">
+											<span class="float-left ml-2"> Assinar (30 dias) </span>
+											<span class="float-right mr-2"> R$ 39,90</span>
+										</button>
+									</div>
+									<div class="row justify-content-center">
+										<div class="is-12 mt-3">
+											<div class="row text-center text-muted">
+												<div class="col-12">
+													<div class="font-15">
+														<span onclick="" style="cursor: pointer"> 744 posts </span>
+														<span class="ml-2 mr-2">  </span>
+														<span onclick="" style="cursor: pointer"> 370 fotos </span>
+														<span class="ml-2 mr-2"> </span>
+														<span onclick="" style="cursor: pointer"> 374 videos </span>
+													</div>
+													<div class="row videopostagem fullwidth" style="position: relative; width: 108%; overflow: hidden; border-radius: 10px;">
+														<!-- VÃ­deo de fundo -->
+														<video style="width: 100%; height: auto;" autoplay="" muted="" loop="" playsinline="">
+															<source src="media/blurred4.mp4" type="video/mp4">
+														</video>
+														<div class="overlay-content" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; text-align: center;">
+															<!-- Logotipo -->
+															<img class="col-12 imageAcima" src="images/logo_icon_branco.png" style="height: 20%; top: 38%;">
+															<!-- Texto de contagem, abaixo do logotipo -->
+															<div class="col-12 row m-0" style="width: 100%; max-width: 500px; top: 60%;">
+																<div class="col-5 text-right">
+																	<span class="text-light text-counts-profile">744 posts</span>
+																</div>
+																<div class="col-2 text-center">
+																	<span class="text-light text-counts-profile"></span>
+																</div>
+																<div class="col-5 text-left">
+																	<span class="text-light text-counts-profile">370k likes</span>
+																</div>
+															</div>
+														</div>
+													</div><br>
+													<div class="row videopostagem fullwidth" style="position: relative; width: 108%; overflow: hidden; border-radius: 10px;">
+														<!-- VÃ­deo de fundo -->
+                                                        <img src="images/foto-blurred.png" alt="" class="rounded">
+
+														<div class="overlay-content" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; text-align: center;">
+															<!-- Logotipo -->
+															<img class="col-12 imageAcima" src="images/logo_icon_branco.png" style="height: 20%; top: 38%;">
+															<!-- Texto de contagem, abaixo do logotipo -->
+															<div class="col-12 row m-0" style="width: 100%; max-width: 500px; top: 60%;">
+																<div class="col-5 text-right">
+																	<span class="text-light text-counts-profile">744 posts</span>
+																</div>
+																<div class="col-2 text-center">
+																	<span class="text-light text-counts-profile"></span>
+																</div>
+																<div class="col-5 text-left">
+																	<span class="text-light text-counts-profile">370k likes</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<br>
+                                                    <div class="row videopostagem fullwidth" style="position: relative; width: 108%; overflow: hidden; border-radius: 10px;">
+														<!-- VÃ­deo de fundo -->
+                                                        <img src="images/foto-blurred2.png" alt="" class="rounded">
+
+														<div class="overlay-content" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; text-align: center;">
+															<!-- Logotipo -->
+															<img class="col-12 imageAcima" src="images/logo_icon_branco.png" style="height: 20%; top: 38%;">
+															<!-- Texto de contagem, abaixo do logotipo -->
+															<div class="col-12 row m-0" style="width: 100%; max-width: 500px; top: 60%;">
+																<div class="col-5 text-right">
+																	<span class="text-light text-counts-profile">744 posts</span>
+																</div>
+																<div class="col-2 text-center">
+																	<span class="text-light text-counts-profile"></span>
+																</div>
+																<div class="col-5 text-left">
+																	<span class="text-light text-counts-profile">370k likes</span>
+																</div>
+															</div>
+														</div>
+													</div>
+                                                    <br>
+                                                    <div class="row videopostagem fullwidth" style="position: relative; width: 108%; overflow: hidden; border-radius: 10px;">
+														<!-- VÃ­deo de fundo -->
+														<video style="width: 100%; height: auto;" autoplay="" muted="" loop="" playsinline="">
+															<source src="media/blurred2.mp4" type="video/mp4">
+														</video>
+														<div class="overlay-content" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; text-align: center;">
+															<!-- Logotipo -->
+															<img class="col-12 imageAcima" src="images/logo_icon_branco.png" style="height: 20%; top: 38%;">
+															<!-- Texto de contagem, abaixo do logotipo -->
+															<div class="col-12 row m-0" style="width: 100%; max-width: 500px; top: 60%;">
+																<div class="col-5 text-right">
+																	<span class="text-light text-counts-profile">744 posts</span>
+																</div>
+																<div class="col-2 text-center">
+																	<span class="text-light text-counts-profile"></span>
+																</div>
+																<div class="col-5 text-left">
+																	<span class="text-light text-counts-profile">370k likes</span>
+																</div>
+															</div>
+														</div>
+													</div><br>
+
+													<div class="row videopostagem fullwidth">
+														<img class="col-12 imageAcima" src="images/logo_icon_branco.png" style="height: 20%; top: 38%;">
+														<div class="col-12 imageAcima" style="top: 52%">
+															<div class="col-12 row m-0" style="top: 100%">
+																<div class="col-5 text-right">
+																	<span class="text-light text-counts-profile">744 posts</span>
+																</div>
+																<div class="col-2 text-center">
+																	<span class="text-light text-counts-profile"></span>
+																</div>
+																<div class="col-5 text-left">
+																	<span class="text-light text-counts-profile">370k likes</span>
+																</div>
+															</div>
+														</div>
+														<img src="images/blur_7.jpg" alt="" class="rounded">
+													</div><br>
+													
+													<div class="row videopostagem fullwidth" style="position: relative; width: 108%; overflow: hidden; border-radius: 10px;">
+														<!-- VÃ­deo de fundo -->
+														<video style="width: 100%; height: auto;" autoplay="" muted="" loop="" playsinline="">
+															<source src="media/blurred3.mp4" type="video/mp4">
+														</video>
+
+                                                        <div class="overlay-content" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; text-align: center;">
+															<!-- Logotipo -->
+															<img class="col-12 imageAcima" src="images/logo_icon_branco.png" style="height: 20%; top: 38%;">
+															<!-- Texto de contagem, abaixo do logotipo -->
+															<div class="col-12 row m-0" style="width: 100%; max-width: 500px; top: 60%;">
+																<div class="col-5 text-right">
+																	<span class="text-light text-counts-profile">744 posts</span>
+																</div>
+																<div class="col-2 text-center">
+																	<span class="text-light text-counts-profile"></span>
+																</div>
+																<div class="col-5 text-left">
+																	<span class="text-light text-counts-profile">370k likes</span>
+																</div>
+															</div>
+														</div>
+                                                        
+														 
+													</div><br>
+
+								 
+
+													<div class="row videopostagem fullwidth" style="position: relative; width: 108%; overflow: hidden; border-radius: 10px;">
+														<!-- VÃ­deo de fundo -->
+														<video style="width: 100%; height: auto;" autoplay="" muted="" loop="" playsinline="">
+															<source src="media/blurred5.mp4" type="video/mp4">
+														</video>
+
+                                                        <div class="overlay-content" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; text-align: center;">
+															<!-- Logotipo -->
+															<img class="col-12 imageAcima" src="images/logo_icon_branco.png" style="height: 20%; top: 38%;">
+															<!-- Texto de contagem, abaixo do logotipo -->
+															<div class="col-12 row m-0" style="width: 100%; max-width: 500px; top: 60%;">
+																<div class="col-5 text-right">
+																	<span class="text-light text-counts-profile">744 posts</span>
+																</div>
+																<div class="col-2 text-center">
+																	<span class="text-light text-counts-profile"></span>
+																</div>
+																<div class="col-5 text-left">
+																	<span class="text-light text-counts-profile">370k likes</span>
+																</div>
+															</div>
+														</div>
+                                                        
+														 
+													</div><br>
+
+
+
+													<script defer="" src="vcd15cbe7772f49c399c6a5babf22c1241717689176015" data-cf-beacon="{" rayid":"9027be15bfa7fba7","version":"2025.1.0","r":1,"token":"2b42f34d6100447897d5ffafc0015597","servertiming":{"name":{"cfextpri":true,"cfl4":true,"cfspeedbrain":true,"cfcachestatus":true}}}"="" crossorigin="anonymous"></script>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	 
+
+
+</body></html>
